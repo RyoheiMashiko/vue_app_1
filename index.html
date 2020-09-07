@@ -6,16 +6,9 @@
 </head>
 <body>
   <div id="app">
-    {{ message }}
+    <input type="text" v-on:input="changeTitle">
+    {{ title }}
   </div>
-
-  <script>
-    var app = new Vue({
-      el: '#app',
-      data: {
-        message: 'Hi,There.'
-      }
-    })
-  </script>
+  <script src="script.js"></script>  
 </body>
 </html>
